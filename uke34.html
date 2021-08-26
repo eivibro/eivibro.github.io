@@ -5,7 +5,7 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <link rel='stylesheet' type='text/css' href='style.css'>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='alternate' type='application/rss+xml' title='Land Chad RSS' href='/rss.xml'>
+        <link rel='alternate' type='application/rss+xml' title='Land Chad RSS' href='/rss.xml'>
     </head>
 <body>
   <main>
@@ -19,17 +19,73 @@
     </p>
     <h2>Grunnleggende</h2>
     <p>
-      I starten av filen så ønsker vi å fortelle nettleseren at den leser en
-      html-fil. Dette gjør vi ved å ha følgende kode på første linje.
+      Vi starter gjerne med en fil med navnet <code>index.html</code>. Dette
+      er fordi webservere ser etter denne filen som et startpunkt når vi skal
+      vise innhold på nettet. I starten av filen så ønsker vi å fortelle
+      nettleseren at den leser en html-fil. Dette gjør vi ved å ha følgende
+      kode på første linje.
     </p>
     <pre>
       <code>
         &lt;!DOCTYPE html&gt;
-          &lt;h1&gt;My website!&lt;/h1&gt;
-          &lt;p&gt;This is my website. Thanks for stopping by!&lt;/p&gt;
-          &lt;p&gt;Now my website is live!&lt;/p&gt;
       </code>
     </pre>
+    <p>
+      For å starte HTML-koden skriver vi følgende på neste linje
+    </p>
+    <pre>
+          <code>
+            &lt;html lang=no&gt;
+          </code>
+    </pre>
+    <p>
+      der <code>lang=no</code> betyr at vi ønsker å lage en norsk side. Vi må
+      også skrive inn en linje som forteller at koden skal avsluttes. Denne
+      skal stå på slutten av filen. Til sammen har vi da
+    </p>
+    <pre>
+      <code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang=no&gt;
+        &lt;/html&gt;
+      </code>
+    </pre>
+    <p>
+      Legg merke til at vi ikke skriver <code>lang=no</code> i siste linje,
+      ettersom vi bare trenger å fortelle én gang hvilket språk vi ønsker å
+      bruke. Legg også merke til at vi avslutter koden med en skråstrek i
+      <code>&lt;/html&gt;</code>. Dette gjør vi for de fleste kommandoer.
+      All HTML-kode putter vi mellom de to siste linjene.
+    </p>
+    <p>
+      For å lage en overskrift bruker vi det vi kaller en tag. Den største
+      overskriften har taggen <code>h1</code>. I koden vår vil det se ut som
+      dette
+    </p>
+    <pre>
+      <code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang=no&gt;
+        &lt;h1&gt;Dette er en overskrift&lt;/h1&gt;
+        &lt;/html&gt;
+      </code>
+    </pre>
+    <p>
+      Også denne taggen avsluttes med en <code>/</code>. Det finnes også flere
+      slike tags. Blant annet er <code>h2</code> og <code>h3</code>
+      overskrifter som er mindre.
+    </p>
+    <h2>Oppgaver</h2>
+    <p>
+    <ul>
+      <li>Prøv å gå inn på følgende side og finn ut hvordan du legger til en
+      paragraf <a href="https://www.w3schools.com/html/">w3schools</a> </li>
+      <li>Prøv å finne ut hvordan du kan lage <strong>fet skrift</strong> </li>
+      <li>Prøv å finne ut hvordan du kan lage <em>kursiv skrift</em> </li>
+      <li>Prøv å linke til en annen nettside</li>
+      <li>Legg inn noen ting på siden og prøv å gjøre den til din egen </li>
+    </ul>
+    </p>
   </main>
 </body>
 </html>
