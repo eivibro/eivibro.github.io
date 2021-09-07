@@ -17,9 +17,28 @@
       bruker vi det vi kaller et stilark (style sheet). Dette er en fil som
       ligger i samme mappe som <code>index.html</code>-fila og som har filendelsen
       <code>.css</code>. Vi skal også lage en ny html-fil som vi skal linke til.
-      <ul>
+      <h2>Legge til et stilark</h2>
+      <ol>
         <li>Lag en ny fil i atom som heter <code>style.css</code></a></li>
-      </ul>
+	<li>
+	Tilbake i filen <code>index.html</code> må du fortelle at koden skal bruke et style sheet.
+	Det gjør du ved å putte inn følgende kode rett etter <code>&lt;html&gt;</code>-taggen.
+	<pre>
+	  <code>
+	    &lt;head&gt;
+            &lt;link rel='stylesheet' type='text/css' href='style.css'&gt;
+	    &lt;/head&gt;
+	  </code>
+	</pre>
+	Det som står i <code>&lt;head&gt;</code>-taggen vil ikke vises på selve nettsiden, men det
+	forteller likevel ting om nettsiden. I dette tilfellet forteller det hvor nettsiden skal
+	finne hvilken stil den skal bruke. Mer om denne taggen senere.
+	</li>
+      <li>
+	
+      </li>
+
+      </ol>
     </p>
     </main>
 </body>
