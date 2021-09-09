@@ -9,37 +9,77 @@
     </head>
 <body>
   <main>
-    <h1>Uke 35</h1>
+    <h1>Uke 36</h1>
     <p>
       Hvis du ikke har fått lagt ut nettsiden på GitHub enda så følger du instruksjonene
       for <a href="uke35.html">uke 35</a>. Denne uken skal vi modifisere siden vår
       enda mer ved blant annet å bytte farger. For å gjøre dette på enklest mulig måte
       bruker vi det vi kaller et stilark (style sheet). Dette er en fil som
       ligger i samme mappe som <code>index.html</code>-fila og som har filendelsen
-      <code>.css</code>. Vi skal også lage en ny html-fil som vi skal linke til.
+      <code>.css</code>. Det er mulig å gjøre det rett i html-fila, men det er
+      mer praktisk å gjøre det i en egen fil. Vi skal også lage en ny html-fil
+      som vi skal linke til.
       <h2>Legge til et stilark</h2>
       <ol>
         <li>Lag en ny fil i atom som heter <code>style.css</code></a></li>
-	<li>
-	Tilbake i filen <code>index.html</code> må du fortelle at koden skal bruke et style sheet.
-	Det gjør du ved å putte inn følgende kode rett etter <code>&lt;html&gt;</code>-taggen.
-	<pre>
-	  <code>
-	    &lt;head&gt;
-            &lt;link rel='stylesheet' type='text/css' href='style.css'&gt;
-	    &lt;/head&gt;
-	  </code>
-	</pre>
-	Det som står i <code>&lt;head&gt;</code>-taggen vil ikke vises på selve nettsiden, men det
-	forteller likevel ting om nettsiden. I dette tilfellet forteller det hvor nettsiden skal
-	finne hvilken stil den skal bruke. Mer om denne taggen senere.
-	</li>
+    	<li>
+      <p>
+    	Tilbake i filen <code>index.html</code> må du fortelle at koden skal bruke et style sheet.
+    	Det gjør du ved å putte inn følgende kode rett etter <code>&lt;html&gt;</code>-taggen.
+      </p>
+    	<pre>
+    	  <code>
+    	    &lt;head&gt;
+              &lt;link rel='stylesheet' type='text/css' href='style.css'&gt;
+    	    &lt;/head&gt;
+    	  </code>
+    	</pre>
+      <p>
+    	Det som står i <code>&lt;head&gt;</code>-taggen vil ikke vises på selve nettsiden, men det
+    	forteller likevel ting om nettsiden. Mer om denne taggen senere. I dette
+      tilfellet forteller innholdet hvor nettsiden skal finne hvilken stil den skal
+      bruke og filen heter <code>style.css</code>.
+      </p>
+    	</li>
       <li>
-	
+        Bla deg ned til der det står style.css <a href="https://www.w3schools.com/html/html_css.asp">her</a>.
+        Her står det et eksempel på hvordan du endrer bakgrunnsfarge, farge på
+        paragrafer, og farge på overskrifter. Forsøk å endre noen ting i din
+        egen style.css-fil.
       </li>
-
       </ol>
     </p>
-    </main>
+    <h2>Linke til egen fil</h2>
+    <p>
+      Hvis du har andre <code>.html</code>-filer liggende i samme mappe samme
+      mappe som <code>index.html</code>-filen, eller i undermapper, så kan du
+      linke til disse filene. Et eksempel er dette dere leser nå. Innholdet
+      ligger i fila <code>uke36.html</code> og er linket til på i
+      <code>index.html</code>. For å linke ble denne koden brukt:
+      <pre>
+        <code>
+            &lt;a href="uke36.html"&gt;uke 36&lt;/a&gt;
+        </code>
+      </pre>
+    </p>
+    <p>
+      Koden plasseres i teksten der du vil ha linken, og den får teksten
+      "uke 36".
+    </p>
+    <ol>
+      <li>
+        Lag en fil <code>uke36.html</code> som du legger i samme mappe som
+        filen <code>index.html</code>. Den må ha riktig html syntaks. Kan gjerne
+        være en kopi av <code>index.html</code> som du redigerer på.
+      </li>
+      <li>
+        Link til denne filen i <code>index.html</code>-filen.
+      </li>
+        Forklar hvilke endringer du har gjort i <code>css</code>-filen i filen
+        <code>uke36.html</code>.
+      <li>
+
+    </ol>
+  </main>
 </body>
 </html>
